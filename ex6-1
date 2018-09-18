@@ -1,0 +1,24 @@
+#!/bin/bash
+
+INFOBOX=${INFOBOX=dialog}
+TITLE="Default"
+MESSAGE="Default Message"
+XCOORD=10
+YCOORD=20
+
+
+funcInfoBox () {
+	"$INFOBOX" --title $1 --infobox "$2" "$3" "$4"
+	sleep "$5"
+}
+
+MYPARAM=$1
+
+if [ "$MYPARAM" = "shutdown" ] ; then
+	funcInfoBox "WARNING" "SHUTTING DOWN IN 5 SECONDS" 10 20 5
+else
+	funcInfoBox "INFO" "Carry on my wayward sooon!" 10 20 5
+fi
+
+
+

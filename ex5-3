@@ -1,0 +1,14 @@
+#!/bin/bash
+
+USERNAME=$1
+
+funcAgeinDays () {
+	echo "Hello $USERNAME, you are $1 years old"
+	echo "In days, you are `expr $1 \* 365` days old"
+}
+
+
+echo "Enter your age: "
+read AGE
+
+funcAgeinDays $AGE

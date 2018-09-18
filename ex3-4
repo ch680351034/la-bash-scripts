@@ -1,0 +1,22 @@
+#!/bin/bash
+
+trap 'echo "Press Q or q to Exit fucking noob"' SIGINT SIGTERM SIGTSTP
+
+clear
+
+while [ "$WEAPON" != "Q" ] && [ "$WEAPON" != "q" ] ; do
+	echo ""
+	echo "=====================MENU==================="
+	echo "1. Sword"
+	echo "2. Spear"
+	echo "3. Hammer"
+	echo "4. Bow"
+	echo "5. Fists"
+	echo "Q. Quit/Exit"
+	echo "============================================"
+	echo ""
+	echo "Select your weapon: "
+	read  WEAPON
+	clear
+	echo "You chose $WEAPON"
+done

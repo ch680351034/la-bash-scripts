@@ -1,0 +1,19 @@
+#!/bin/bash
+
+clear
+
+echo "Enter the filename: "
+read FILE
+
+exec 7<>"$FILE"
+
+while read -r SUPERHEROES ; do
+	echo "Member name: $SUPERHEROES"
+done <&7
+
+READDATE="`date`"
+
+echo "$READDATE" >&7
+
+exec 7>&-
+

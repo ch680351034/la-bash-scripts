@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Hey enter you First name: "
+read FIRSTNAME
+
+echo "Last name: "
+read LASTNAME
+
+echo "Age: "
+read AGE
+
+echo "Hey $FIRSTNAME $LASTNAME, in 15 years you are `expr $AGE + 15` years old"

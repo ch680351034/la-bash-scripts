@@ -1,0 +1,15 @@
+#!/bin/bash
+
+GLOBALVAR="Globally visible"
+
+funcExample () {
+	LOCALVAR="Locally visible"
+}
+
+echo "Before function call, GLOBALVAR is $GLOBALVAR"
+echo "Before function call, LOCALVAR is $LOCALVAR"
+
+funcExample
+
+echo "After function call, GLOBALVAR is $GLOBALVAR"
+echo "After function call, LOCALVAR is $LOCALVAR"

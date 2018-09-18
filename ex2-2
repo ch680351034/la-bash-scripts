@@ -1,0 +1,10 @@
+#!/bin/bash
+
+clear
+
+echo "Guess a number from 1 to 5: "
+read GUESSNUM
+
+if [ $GUESSNUM -eq 3 ] ; then
+	echo "You have guessed the correct number"
+fi

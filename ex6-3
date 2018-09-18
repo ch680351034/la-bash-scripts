@@ -1,0 +1,25 @@
+#!/bin/bash
+
+INPUTBOX=${INPUT=dialog}
+TITLE="Default"
+MESSAGE="Default Message"
+XCOORD=10
+YCOORD=20
+
+
+funcInputBox () {
+	"$INPUTBOX" --title $1 --inputbox "$2" "$3" "$4" 2> inputfile.txt
+}
+
+
+funcInputBox "FILEVIEWERv2.0" "Please select a file to view" 10 20
+
+if [ "`cat inputfile.txt`" != "" ] ; then
+	cat "`cat inputfile.txt`"
+else
+	echo "File empty or not found"
+	exit 143
+fi
+
+
+

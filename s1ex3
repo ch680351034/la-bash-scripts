@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Hello and welcome to movie phone"
+
+echo " If pyou bla bla bla won't show in console" >> /dev/null
+
+echo "Press 2!"

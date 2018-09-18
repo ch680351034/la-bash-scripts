@@ -1,0 +1,17 @@
+#!/bin/bash
+
+clear
+
+echo "Enter the filename: "
+read FILE
+
+echo "Enter delimiter used: "
+read DELIMS
+
+IFS=$DELIMS
+
+while read -r CPU MEM DSK ; do
+	echo "Processsor is $CPU"
+	echo "Memory is $MEM"
+	echo "Drive is $DSK"
+done <"$FILE"

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+SHELLSCRIPTS="`ls ex2*`"
+
+for SCRIPT in ${SHELLSCRIPTS} ; do
+	echo "Contents of $SCRIPT: "
+	echo "====================="
+	cat $SCRIPT
+	echo ""
+	echo "====================="
+done
+
+

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+clear
+
+DIRECTORY="$1"
+
+echo "Changing to directory: $DIRECTORY"
+cd "$DIRECTORY" 2> /dev/null
+
+if [ "$?" = 0 ] ; then
+	echo "Successfuly changed directory"
+else
+	echo "Failed to change directory"
+	exit 77
+fi
+
+
+

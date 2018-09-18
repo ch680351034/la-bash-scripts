@@ -1,0 +1,19 @@
+#!/bin/bash
+
+SERVERLIST=("lin1" "lin2" "lin3" "lin4" "lin5")
+
+echo ${SERVERLIST[0]}
+
+echo ${SERVERLIST[4]}
+echo ${SERVERLIST[*]}
+
+echo ""
+echo "========================================"
+
+COUNT=0
+for INDEX in ${SERVERLIST[@]}; do 
+#	echo "Processing server ${SERVERLIST[$COUNT]}"
+	echo "Processing server $INDEX"
+	COUNT=`expr $COUNT + 1`
+done
+

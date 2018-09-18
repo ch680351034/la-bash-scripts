@@ -1,0 +1,29 @@
+#!/bin/bash
+
+GENDER=$1
+
+funcHooman () {
+	ARMS=2
+	LEGS=2
+	echo "A Hooman has $ARMS arms and $LEGS legs"
+	echo "But what gender?"
+	funcMail () {
+		BEARD=1
+		echo "A Male has $BEARD beard"
+	}
+	funcFemail () {
+		BEARD=0
+		echo "A Female has $BEARD beard"
+	}
+}
+
+if [ "$GENDER" == "Male" ] ; then
+	funcHooman
+	funcMail
+elif [ "$GENDER" == "Female" ] ; then
+	funcHooman
+	funcFemail
+else
+	funcHooman
+fi
+

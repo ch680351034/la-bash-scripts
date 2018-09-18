@@ -1,0 +1,13 @@
+#!/bin/bash
+clear
+
+set -e 
+
+expr 5 + 10
+echo $?
+
+rm non-existent.file
+echo $?
+
+expr 1 + 2
+echo $?

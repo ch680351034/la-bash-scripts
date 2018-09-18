@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# function definitions
+
+funcExample () {
+	echo "this was generation from inside the funcExample function"
+}
+
+echo "Starting script, message outside function"
+
+funcExample
+
+echo "End of script, message outside function"
+

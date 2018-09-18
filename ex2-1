@@ -1,0 +1,7 @@
+#!/bin/bash
+
+USERNAME=$1
+PASSWORD=$2
+
+echo "You have entered $PASSWORD as your password"
+echo "You have entered $USERNAME as your username"

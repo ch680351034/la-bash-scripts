@@ -1,0 +1,23 @@
+#!/bin/bash
+
+MESSAGEBOX=${MESSAGEBOX=dialog}
+TITLE="Default"
+MESSAGE="Default Message"
+XCOORD=10
+YCOORD=20
+
+
+funcMsgBox () {
+	"$MESSAGEBOX" --title $1 --msgbox "$2" "$3" "$4"
+}
+
+MYPARAM=$1
+
+if [ "$MYPARAM" = "shutdown" ] ; then
+	funcMsgBox "WARNING" "WE ARE SHUTTING DOWN. PRESS OK TO CONTINUE." 10 20 5
+else
+	funcMsgBox "INFO" "Carry on my wayward sooon!" 10 20 5
+fi
+
+
+

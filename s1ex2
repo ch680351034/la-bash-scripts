@@ -1,0 +1,19 @@
+#!/bin/bash
+# Exercise 2 & 3
+
+clear # clears the screen
+
+# Setting the variables
+MYUSERNAME="hax0"
+MYPASSWORD="paxw0rd"
+STARTOFSCRIPT="`date`"
+ENDOFSCRIPT="`date`"
+
+
+# Echo out the text with corresponding variables
+echo "Script started at $STARTOFSCRIPT"
+echo "Hello $MYUSERNAME"
+echo "" 	# This is a blank line
+echo "Your password is $MYPASSWORD"
+echo ""
+echo "Script ended at $ENDOFSCRIPT"

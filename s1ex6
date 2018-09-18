@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# This command uses shopt ( shell options ) and enables (-s) expanding of aliases inside a bash instance
+shopt -s expand_aliases
+
+TODAYSDATE="`date`"
+USERFILES="`find /home/$USER/bash -user $USER`"
+
+alias TODAY="date"
+alias UFILES="find /home/$USER/bash -user $USER"
+
+
+echo "Todays date is $TODAYSDATE"
+echo ""
+echo "Users files in bash folder are: $USERFILES"
+echo ""
+
+
+NEWTODAY=`TODAY`
+echo $NEWTODAY

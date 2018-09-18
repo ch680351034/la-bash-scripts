@@ -1,0 +1,17 @@
+#!/bin/bash
+
+MYDIR="$1"
+
+echo "Changing to $MYDIR directory"
+
+cd "$MYDIR" 2> /dev/null
+
+if [ "$?" = "0" ] ; then
+	echo "Successfully changed to $MYDIR"
+	echo "Listing files and dirs below: `ls -l`"
+else
+	echo "Failed to cd"
+	exit 120
+fi
+
+

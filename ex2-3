@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Enter a number between 1 and 3"
+read NUMBER
+
+echo ""
+
+if [ $NUMBER -eq 1 ] || [ $NUMBER -eq 2 ] || [ $NUMBER -eq 3 ] ; then
+	echo "You selected $NUMBER"
+else
+	echo "You did not follow instructions!"
+fi
+
+
+

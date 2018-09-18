@@ -1,0 +1,32 @@
+#!/bin/bash
+clear
+
+echo "--Betchay's--Kitchen--"
+echo "=========MENU========="
+echo "1. Tapsilog"
+echo "2. Tocilog"
+echo "3. Longsilog"
+echo "4. Hotsilog"
+echo "5. Corsilog"
+echo "======================"
+
+echo ""
+echo "Please select your order: "
+read MYORDER
+
+case $MYORDER in
+	1)
+		echo "85 Pesos - Tapa" ;;
+	2)
+		echo "80 Pesos - Tocino" ;;
+	3)
+		echo "80 Pesos - Longganisa" ;;
+	4)
+		echo "75 Pesos - Hotdog" ;;
+	5)
+		echo "90 Pesos - Corned Beef" ;;		
+	*)
+		echo "Wala kami nyan buset!" ;;
+
+esac
+

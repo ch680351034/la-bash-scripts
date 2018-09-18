@@ -1,0 +1,30 @@
+#!/bin/bash
+
+MENUBOX=${MENUBOX=dialog}
+TITLE="Default"
+MESSAGE="Default Message"
+XCOORD=10
+YCOORD=20
+
+
+funcMenuBox () {
+	"$MENUBOX" --title "TapsiLog" --menu "Please select your order" 20 50 5 1 "Tapsilog" 2 "Tocilog" 3 "Longsilog" 4 "Hotsilog" X "Exit" 2> menuselection.txt
+}
+
+while [ "`cat menuselection.txt`" != X ] ; do
+	funcMenuBox
+	case "`cat menuselection.txt`" in
+		1) echo "Made from choice Tapa from Stumpy farm" 
+			sleep 10 ;;
+		2) echo "Made from young pork of racist gay celeb"
+			sleep 10 ;;
+		3) echo "Made from loong ground scraps of internal orgens"
+			sleep 10 ;;
+		4) echo "Made from loong ground scraps of double dead enimels"
+			sleep 10 ;;
+		X) echo "Exiting..." 
+			rm menuselection.txt
+			sleep 2
+			exit 100 ;;			
+	esac
+done

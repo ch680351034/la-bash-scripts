@@ -1,0 +1,16 @@
+#!/bin/bash
+clear
+
+echo "Input a number"
+read MYNUMBER
+echo "Input your message"
+read MYMESSAGE
+COUNT=1
+echo "Here goes: "
+echo ""
+
+while [ $COUNT -le $MYNUMBER ] ; do
+	echo "$MYMESSAGE - $COUNT"
+	COUNT="`expr $COUNT + 1`"
+done
+
